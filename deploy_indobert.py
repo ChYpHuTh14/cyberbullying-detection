@@ -65,7 +65,7 @@ class CyberbullyingDataset(Dataset):
         }
 
 
-slang=pd.read_csv(r"C:\Main Storage\Documents\BINUS-University\Semester 4\NLP\LEC_NLP\AOL_NLP\Training_AOL_NLP\2nd Attempt\colloquial-indonesian-lexicon.csv")
+slang=pd.read_csv('colloquial-indonesian-lexicon.csv')
 slang_dict=dict(zip(slang['slang'],slang['formal']))
 
 def replace_slang(comment):
